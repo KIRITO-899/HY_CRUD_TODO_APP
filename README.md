@@ -105,6 +105,3 @@ MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/todo_crud
 └── .env                   # Environment variables
 ```
 
-## License
-
-ISC
