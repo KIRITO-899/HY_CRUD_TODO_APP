@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO CRUD API</title>
+    
+    <!-- Favicon - Perfect Setup -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="/favicon-32x32.svg">
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/favicon-16x16.svg">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <!-- For iOS/Apple devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.svg">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.svg">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon.svg">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.svg">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon.svg">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.svg">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon.svg">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.svg">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon.svg">
+    <meta name="apple-mobile-web-app-title" content="TODO API">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <!-- For Android/Chrome -->
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#4F46E5">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- For Windows -->
+    <meta name="msapplication-TileColor" content="#4F46E5">
+    <meta name="msapplication-TileImage" content="/apple-touch-icon.svg">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- For Safari Pinned Tab -->
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4F46E5">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 2rem;
+            background: url('/favicon.svg') center/cover;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(79, 70, 229, 0.3);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+        
+        .status {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(34, 197, 94, 0.2);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 50px;
+            color: #86efac;
+            font-weight: 600;
+        }
+        
+        .endpoints {
+            margin-top: 2rem;
+            text-align: left;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1.5rem;
+            border-radius: 10px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.9rem;
+        }
+        
+        .endpoint {
+            margin: 0.5rem 0;
+            opacity: 0.8;
+        }
+        
+        .method {
+            color: #fbbf24;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <h1>TODO CRUD API</h1>
+        <p>Your task management API is ready to serve!</p>
+        <div class="status">✓ Server Running</div>
+        
+        <div class="endpoints">
+            <div class="endpoint"><span class="method">POST</span> /api/register - Register user</div>
+            <div class="endpoint"><span class="method">POST</span> /api/login - Login user</div>
+            <div class="endpoint"><span class="method">GET</span> /api/todos - Get todos</div>
+            <div class="endpoint"><span class="method">POST</span> /api/todos - Create todo</div>
+            <div class="endpoint"><span class="method">PUT</span> /api/todos/:id - Update todo</div>
+            <div class="endpoint"><span class="method">DELETE</span> /api/todos/:id - Delete todo</div>
+        </div>
+        
+        <div style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+            🎨 Favicon available in multiple formats:<br>
+            SVG, ICO, Apple Touch Icons, PWA Icons
+        </div>
+    </div>
+</body>
+</html>
